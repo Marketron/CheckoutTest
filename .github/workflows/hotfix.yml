@@ -1,10 +1,8 @@
 name: Hotfix workflow
 
 on:
-  pull_request:
-    branches: [master]
-    paths:
-      - "hotfix_*"
+  push:
+    branches: [hotfix_*]
 
 jobs:
   build:
